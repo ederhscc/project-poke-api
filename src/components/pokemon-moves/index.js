@@ -63,7 +63,6 @@ const Ul = styled.ul`
     li {
         text-align: center;
         margin: 8px;
-        background-color: var(--clr-dark-green);
         font-size: 17px;
         padding: 5px;
         border-radius: 5px;

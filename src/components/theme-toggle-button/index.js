@@ -1,15 +1,12 @@
 import { ToggleButton } from "../button-toggle";
-import { usePersistedState } from "../../utils/use-persisted-state";
 import { light } from "../../themes/light"; 
 import { dark } from "../../themes/dark";
-import { useContext } from "react";
-import { ThemeContext } from "../../theme-context";
+import { usePersistedState } from "../../utils/use-persisted-state";
 
 export const ThemeTogglerButton = () => {
-    // const {themeContext} = useContext(ThemeContext);
-    // const [theme, setTheme] = usePersistedState('theme', themeContext);
-    const {theme, setTheme} = useContext(ThemeContext);
-    console.log(theme)
+   
+    const [theme, setTheme] = usePersistedState('theme', light);
+
     return (
         <div>
             <ToggleButton onClick={() => setTheme(theme === light ? dark : light)}>Light / Dark</ToggleButton>
