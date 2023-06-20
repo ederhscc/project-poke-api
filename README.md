@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Projeto PokéAPI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objetivo
 
-## Available Scripts
+- Construir uma aplicação Web que consome a PokéAPI para apresentar ao usuário uma lista de pokemons. Essa aplicação terá a funcionalidade de mudança de tema, filtro de pokemons pelo tipo e exibirá os movimentos e habilidades de um determinado pokemon selecionado pelo usuário. 
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+## Índice 📜
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Screenshot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Requisitos do Projeto
 
-### `npm test`
+#### O Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Funcionalidades
 
-### `npm run build`
+#### Tecnologias Usadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Como utilizar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshot 🎬
 
-### `npm run eject`
+<div align='center'>
+<img src="./public/design/poke-api.gif">
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Requisitos do Projeto 🧾
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- A aplicação deverá ser Single Page Application (SPA);
+- Utilizar React.js para o desenvolvimento da aplicação;
+- Utilizar Context API para criação do Theme Toggler(Alternador entre os temas light e dark);
+- Utilizar styled-components para estilização dos componentes;
+- Utilizar react-router-dom para a navegação entre as páginas;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+## O Projeto 📚
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este projeto foi criado como um SPA (Single Page Application) utilizando o React e a biblioteca React Router Dom para fazer o direcionamento das páginas. O tema de cores é distribuído por toda a aplicação através do Context API e, além do mais, toda a estilização foi feita utilizando a biblioteca Styled Component.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+## Funcionalidades ⚙
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Exibição de 10 cards de pokémons
+- Botão de carregamento de mais pokémons
+- Página de detalhe do pokémon
+- Mecanisno de filtrar por tipo
+- Botão de troca de temas
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tecnologia Usada 🛠
 
-### Making a Progressive Web App
+- React;
+- Styled Components;
+- React Router DOM;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+## Como utilizar 🎮
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1 - Clone para o projeto: 
 
-### Deployment
+```
+git@github.com:ederhscc/project-poke-api.git
+```
+No seu terminal, instale as dependências necessárias executando npm install ou yarn install.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2 - Ainda no seu terminal, execute o comando npm start ou yarn start para iniciar o servidor de desenvolvimento;
+3 - O seu navegador deverá abrir mostrando que o servidor está rodando no endereço http://localhost:3000/;
+4 - Clique no botão buscar mais dez para carregar mais dez pokemons na tela;
+5 - Clique no botão de alternar tema no canto superior esquerdo para alternar entre os temas dark e light;
+6 - Digite um tipo de pokemon no campo superior direito para filtrar os pokemons listados;
+7 - Clique na foto do pokemon para mostrar a lista de movimentos e as habilidades do pokemon.
 
-### `npm run build` fails to minify
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Autor 🧑
+
+### Eder Henrique Santos
+
+<br>
+
+## Links 🔗
+
+Deploy:
+
+<div align="left">
+
+  <a href = "mailto:ederhscc@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/-Gmail-%23E4405F?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" width="150px" height="35px">
+  </a>
+  </br>
+  <a href="https://www.linkedin.com/in/eder-henrique-santos" target="_blank">
+  <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" width="150px" height="35px">
+  </a>
+  </br>
+
+</div>

@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh; 
         display: flex;
         justify-content: center;
+        background: var(--clr-light);
   
       @media (max-width: 640px) {
             min-width: 100%;

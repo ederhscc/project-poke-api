@@ -6,11 +6,12 @@ import { Move } from "../pokemon-moves";
 import styled from "styled-components";
 import { useContext } from "react";
 import { ThemeContext } from "../../theme-context";
+import {SearchBar} from "../search-bar";
 
 
 export const PokemonDetails = () => {
     const [pokemon, setPokemon] = useState([]);
-    const {theme} = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
 
     const { id } = useParams();
 
@@ -24,28 +25,33 @@ export const PokemonDetails = () => {
     }, []);
 
     return (
-        <Main style={{backgroundColor: theme.colors.backgroundColor}}>
-            <Section>
-                <header>
-                    <Link to='/'>
-                        <Button style={{backgroundColor: theme.colors.backgroundColor, color: theme.colors.text}}>Voltar</Button>
-                    </Link>
-                </header>
-                <CardPokemon style={{backgroundColor: theme.colors.backgroundColor, color: theme.colors.text}}>
-                    <img src={pokemon[1]} alt={pokemon[0]} />
-                    <h1>{pokemon[0]}</h1>
-                    <h3>Tipo: {pokemon[4]}</h3>
-                </CardPokemon>
-                <CardInfo>
-                    <div>
-                        <Move />
-                    </div>
-                    <div>
-                        <Ability />
-                    </div>
-                </CardInfo>
-            </Section>
-        </Main>
+        <>
+            <header>
+                <SearchBar />
+            </header>
+            <Main style={{ backgroundColor: theme.colors.backgroundColor }}>
+                <Section>
+                    <header>
+                        <Link to='/'>
+                            <Button style={{ backgroundColor: theme.colors.backgroundColor, color: theme.colors.text }}>Voltar</Button>
+                        </Link>
+                    </header>
+                    <CardPokemon style={{ backgroundColor: theme.colors.backgroundColor, color: theme.colors.text }}>
+                        <img src={pokemon[1]} alt={pokemon[0]} />
+                        <h1>{pokemon[0]}</h1>
+                        <h3>Tipo: {pokemon[4]}</h3>
+                    </CardPokemon>
+                    <CardInfo>
+                        <div>
+                            <Move />
+                        </div>
+                        <div>
+                            <Ability />
+                        </div>
+                    </CardInfo>
+                </Section>
+            </Main>
+        </>
     );
 }
 

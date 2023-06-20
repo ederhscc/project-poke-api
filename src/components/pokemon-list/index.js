@@ -51,7 +51,7 @@ export const PokemonsList = () => {
                                 return (
                                     <li key={data.name} >
                                         <Link to={`/pokemon/${data.id}`}>
-                                            <CardPokemon style={{backgroundColor: theme.colors.backgroundColor}}>
+                                            <CardPokemon style={{backgroundColor: theme.colors.backgroundColor, color: theme.colors.text}}>
                                                 <div>
                                                     <img src={data.sprites.front_default} alt={data.name} />
                                                 </div>
