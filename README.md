@@ -18,7 +18,7 @@
 
 #### Tecnologias Usadas
 
-#### Como utilizar
+#### Como rodar o projeto
 
 <br>
 
@@ -56,7 +56,7 @@ Este projeto foi criado como um SPA (Single Page Application) utilizando o React
 
 <br>
 
-## Tecnologia Usada 🛠
+## Tecnologias Usadas 🛠
 
 - React;
 - Styled Components;
@@ -64,21 +64,27 @@ Este projeto foi criado como um SPA (Single Page Application) utilizando o React
 
 <br>
 
-## Como utilizar 🎮
+## Como rodar o projeto 🎮
 
-1 - Clone para o projeto: 
-
+Clone o repositório
+```bash
+git clone https://github.com/ederhscc/project-poke-api
 ```
-git@github.com:ederhscc/project-poke-api.git
-```
-No seu terminal, instale as dependências necessárias executando npm install ou yarn install.
 
-2 - Ainda no seu terminal, execute o comando npm start ou yarn start para iniciar o servidor de desenvolvimento;
-3 - O seu navegador deverá abrir mostrando que o servidor está rodando no endereço http://localhost:3000/;
-4 - Clique no botão buscar mais dez para carregar mais dez pokemons na tela;
-5 - Clique no botão de alternar tema no canto superior esquerdo para alternar entre os temas dark e light;
-6 - Digite um tipo de pokemon no campo superior direito para filtrar os pokemons listados;
-7 - Clique na foto do pokemon para mostrar a lista de movimentos e as habilidades do pokemon.
+ Acesse a pasta do projeto
+```bash
+cd project-poke-api
+```
+
+Instalar as dependências
+```bash
+npm install
+```
+
+Execute a aplicação
+```bash
+npm start
+```
 
 <br>
 
