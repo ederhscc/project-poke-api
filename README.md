@@ -96,7 +96,7 @@ npm start
 
 ## Links 🔗
 
-Deploy:
+Deploy: https://project-poke-api-gules.vercel.app/
 
 <div align="left">
 
