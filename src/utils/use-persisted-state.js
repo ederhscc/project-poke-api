@@ -20,7 +20,7 @@ export function usePersistedState(key, initialState){
     useEffect(() => {
         localStorage.setItem(key, JSON.stringify(state));
         setTheme(state);
-    }, [key, state]);
+    }, [key, state, setTheme]);
 
     return [state, setState];
 }
